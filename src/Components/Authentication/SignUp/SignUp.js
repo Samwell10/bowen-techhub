@@ -38,9 +38,7 @@ const SignUp = () => {
         setCommunity(entry)
     }
     const handleSkills = (entry) => {
-        if(skills === null){
-            setSkills(entry)
-        }
+        setSkills([...entry])
         console.log(entry)
         // console.log(skills)
     }
