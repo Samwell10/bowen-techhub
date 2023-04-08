@@ -1,0 +1,18 @@
+.sliderThumbnail{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 0.2em;
+}
+.sliderThumbnail div{
+    width: 10px;
+    height: 10px;
+    border-radius: 100%;
+}
+.current{
+    background-color: white;
+}
+.default{
+    background-color: #7A7A7A;
+}

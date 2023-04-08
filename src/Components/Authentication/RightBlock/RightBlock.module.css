@@ -1,0 +1,27 @@
+.rightBlock{
+    background-color: #5B56A6;
+    background-image: url(../../../images/background/wavebg.svg);
+    mix-blend-mode: normal;
+    transform: rotate(0.41deg);
+    background-repeat: no-repeat;
+    border-radius: 40px;
+    right: 0;
+    max-width: 400px;
+    padding: 3%;
+    height: 100%;
+    position: relative;
+}
+.h4{
+    font-weight: 800;
+    color: white;
+    text-align: right;
+}
+.h1{
+    color: white;
+    line-height: 1.2em;
+    margin-top: 3.5em;
+}
+.p{
+    margin-top: 1.2em;
+    color: rgba(255, 255, 255, 0.86);
+}
