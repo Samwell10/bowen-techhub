@@ -4,6 +4,197 @@
       "id": 1,
       "title": "json-server",
       "author": "typicode"
+    },
+    {
+      "data": {
+        "userSignUpDetails": {
+          "firstname": "Daniel",
+          "lastname": "Onyeachonam",
+          "email": "danieloonyeachonam2020@gmail.com",
+          "password": "bhfejknvfv",
+          "community": "Frontend Community",
+          "skills": [
+            "Python",
+            "HTML",
+            "JavaScript",
+            "CSS"
+          ]
+        }
+      },
+      "id": 2
+    },
+    {
+      "data": {
+        "userSignUpDetails": {
+          "firstname": "Daniel",
+          "lastname": "Onyeachonam",
+          "email": "danieloonyeachonam2020@gmail.com",
+          "password": "bhfejknvfv",
+          "community": "Frontend Community",
+          "skills": [
+            "Python",
+            "HTML",
+            "JavaScript"
+          ]
+        }
+      },
+      "id": 3
+    },
+    {
+      "userSignUpDetails": {
+        "firstname": "Etimbuk",
+        "lastname": "Udofia",
+        "email": "danielonyeachonam2022@yahoo.com",
+        "password": "vhuw;ivnrw",
+        "community": "Frontend Community",
+        "skills": [
+          "HTML",
+          "CSS",
+          "JavaScript",
+          "Python"
+        ]
+      },
+      "id": 4
+    },
+    {
+      "userSignUpDetails": {
+        "firstname": "Ayema",
+        "lastname": "Onyeachonam",
+        "email": "danielonyeachonam2022@yahoo.com",
+        "password": "gu;njhhjvhj,v ",
+        "community": "Software Development",
+        "skills": [
+          "Flutter",
+          "JAVA"
+        ]
+      },
+      "id": 5
+    },
+    {
+      "firstname": "Daniel",
+      "lastname": "Onyeachonam",
+      "email": "danieloonyeachonam2020@gmail.com",
+      "password": "chdiancljkd",
+      "community": "Frontend Community",
+      "skills": [
+        "Python"
+      ],
+      "id": 6
+    },
+    {
+      "firstname": "Daniel",
+      "lastname": "Onyeachonam",
+      "email": "danieloonyeachonam2020@gmail.com",
+      "password": "danielon",
+      "community": "Frontend Community",
+      "skills": [
+        "React"
+      ],
+      "id": 7
+    },
+    {
+      "userSignUpDetails": {
+        "firstname": "Daniel",
+        "lastname": "Onyeachonam",
+        "email": "danieloonyeachonam2020@gmail.com",
+        "password": "danielon",
+        "community": "Backend Community",
+        "skills": [
+          "Python"
+        ]
+      },
+      "id": 8
+    },
+    {
+      "userSignUpDetails": {
+        "firstname": "Daniel",
+        "lastname": "Onyeachonam",
+        "email": "danieloonyeachonam2020@gmail.com",
+        "password": "danielon",
+        "community": "Backend Community",
+        "skills": [
+          "Python",
+          "Node.js"
+        ]
+      },
+      "id": 9
+    },
+    {
+      "userSignUpDetails": {
+        "firstname": "Daniel",
+        "lastname": "Onyeachonam",
+        "email": "danieloonyeachonam2020@gmail.com",
+        "password": "danielon",
+        "community": null,
+        "skills": [
+          "Python",
+          "Node.js"
+        ]
+      },
+      "id": 10
+    },
+    {
+      "userSignUpDetails": {
+        "firstname": "Daniel",
+        "lastname": "Onyeachonam",
+        "email": "danieloonyeachonam2020@gmail.com",
+        "password": "ghbhobnji;",
+        "community": "Frontend Community",
+        "skills": [
+          "React",
+          "JavaScript"
+        ]
+      },
+      "id": 11
+    },
+    {
+      "userSignUpDetails": {
+        "firstname": "Daniel",
+        "lastname": "Onyeachonam",
+        "email": "danieloonyeachonam2020@gmail.com",
+        "password": "ftyigvbjpinj",
+        "community": "Software Development",
+        "skills": [
+          "Flutter",
+          "JAVA"
+        ]
+      },
+      "id": 12
+    },
+    {
+      "userSignUpDetails": {
+        "firstname": "Daniel",
+        "lastname": "Onyeachonam",
+        "email": "danielonyeachonam2022@yahoo.com",
+        "password": "cfgjvghghnjono",
+        "community": "Software Development",
+        "skills": [
+          "Python"
+        ]
+      },
+      "id": 13
+    },
+    {
+      "userSignUpDetails": {
+        "firstname": "Daniel",
+        "lastname": "Onyeachonam",
+        "email": "danieloonyeachonam2020@gmail.com",
+        "password": "dfgjvkghofitsdfgvn",
+        "community": "Game Development",
+        "skills": [
+          "Python",
+          "JavaScript",
+          "JAVA"
+        ]
+      },
+      "id": 14
+    },
+    {
+      "userLoginDetails": {
+        "email": "danieloonyeachonam2020@gmail.com",
+        "password": "ehtkjkk.hlihj,i"
+      },
+      "id": 15
     }
   ],
   "comments": [

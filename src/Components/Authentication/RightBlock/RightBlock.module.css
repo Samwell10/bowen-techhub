@@ -25,3 +25,6 @@
     margin-top: 1.2em;
     color: rgba(255, 255, 255, 0.86);
 }
+ul{
+    list-style:none;
+}

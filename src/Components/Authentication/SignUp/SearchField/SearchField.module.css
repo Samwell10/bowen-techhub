@@ -5,9 +5,9 @@
 .searchField input{
     width: 100%;
     padding: 0.8em;
+    border: 1px solid #ABABAB;
 }
 .searchList{
-    /* overflow-y: scroll; */
     padding: 0.7em;
     margin-top: 0.5em;
     position: absolute;
@@ -26,4 +26,7 @@
 .searchList li:hover{
     color: white;
     background-color: #ABABAB;
+}
+.searchField input.errorField{
+    border-color: rgba(250, 10, 10, 0.945);
 }

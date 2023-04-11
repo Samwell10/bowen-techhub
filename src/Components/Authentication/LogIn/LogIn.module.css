@@ -31,8 +31,12 @@
     color: rgba(243, 120, 91, 1);
     font-weight: 700;
 }
+.intro{
+    width: 90%;
+    max-width: 450px;
+}
 .form{
-    width: 100%;
+    width: 90%;
     max-width: 450px;
     display: flex;
     flex-direction: column;
@@ -47,6 +51,11 @@
 .formElement label{
     color: rgba(106, 106, 106, 1);
     font-weight: 600;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
 }
 .formElement input{
     width: 100%;
@@ -54,6 +63,14 @@
     padding: 1em;
     border: 1px solid #ABABAB;
     border-radius: 0.6rem;
+}
+.error{
+    color: rgba(250, 10, 10, 0.945);
+    font-size: 1rem;
+    font-weight: 600;
+}
+.formElement input.errorField{
+    border-color: rgba(250, 10, 10, 0.945);
 }
 .formElement input:focus{
     outline: none;

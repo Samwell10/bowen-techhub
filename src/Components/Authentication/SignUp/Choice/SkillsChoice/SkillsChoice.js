@@ -2,9 +2,9 @@ import {BiX} from 'react-icons/bi'
 import styles from './SkillsChoice.module.css'
 import SkillsDictionary from '../../SearchField/SkillsDictionary/SkillsDictionary'
 const SkillsChoice = (props) => {
+    const myDictionary = new SkillsDictionary(props.skills)
     const handleClick = (item) => {
-        const myDictionary = new SkillsDictionary(props.skills)
-        myDictionary.remove(item)
+        props.setSkills(myDictionary.remove(item))
     }
     return ( 
         <ul className={styles.mySkills}>

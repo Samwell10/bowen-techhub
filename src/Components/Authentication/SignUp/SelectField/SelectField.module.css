@@ -5,10 +5,10 @@ ul{
     width: 100%;
     position:relative;
 }
-.options, .select-btn{
+.options, .selectBtn{
     cursor:pointer;
 }
-.select-btn{
+.selectBtn{
     display: flex;
     flex-direction: row;
     align-items: center;
@@ -18,7 +18,7 @@ ul{
     border-radius: 0.6rem;
     border: 1px solid #ABABAB;
 }
-.select-btn span{
+.selectBtn span{
     font-weight: 500;
     color:rgba(122, 122, 122, 1);
     font-size: 0.85rem;
@@ -44,4 +44,7 @@ ul{
 .options li:hover{
     color: white;
     background-color: #ABABAB;
+}
+.selectBtn.errorField{
+    border-color: rgba(250, 10, 10, 0.945);
 }

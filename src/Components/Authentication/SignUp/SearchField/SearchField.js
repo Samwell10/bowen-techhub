@@ -17,18 +17,18 @@ const SearchField = (props) => {
         'Vue',
         'Flutter', 
         'Sass',
-        'JavaScript'
+        'JavaScript',
+        'JAVA'
     ]
     const [skills, setSkills] = useState([])
+    const mySkills = new SkillsDictionary(skills)
     const [searchParameter, setSearchParameter] = useState("")
     const handleChange = (e) => {
         setSearchParameter(e.target.value)
     }
     
     const handleClick = (item) => {
-        const mySkills = new SkillsDictionary(skills)
         setSkills(mySkills.add(item))
-        console.log(skills)
         props.onReceive(skills)
         setSearchParameter("")
     }
@@ -39,6 +39,7 @@ const SearchField = (props) => {
                 placeholder="Type to search..." 
                 name="skills" 
                 id="" 
+                className={props.error ? styles.errorField : ''}
                 value={searchParameter}
                 onChange={handleChange}
             />
