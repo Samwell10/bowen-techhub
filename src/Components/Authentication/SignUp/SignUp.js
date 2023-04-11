@@ -45,17 +45,17 @@ const SignUp = () => {
             community: community,
             skills: skills
         }     
+        let entries = Object.values(details)
         setFormErrors(ValidateSignUp(userSignUpDetails))
-        if(Object.values(details) !== "" && community !== "" && skills.length > 0){
+        if(entries.every(entry=>{
+            return entry !== ""
+        }) && community !== "" && skills.length > 0){
             await axios.post(api,{userSignUpDetails})
             .then(res=>{
                 console.log(res)
                 console.log(userSignUpDetails)
             })
             .catch(err=>console.log(err))
-        }
-        else{
-            return
         }
     }
     

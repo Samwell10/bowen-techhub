@@ -1,10 +1,7 @@
 const ValidateLogin = (entry/*, data*/) => {
     const regexEmail = /^[a-zA-Z0-9.!#$%&'*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*$/
     let errors = {}
-    if(entry.email !== "" || entry.password !== ""){
-        errors.all = ""
-    }
-    else if(!regexEmail.test(entry.email)){
+    if(!regexEmail.test(entry.email)){
         errors.email = "Enter a valid email"
     }
     if(entry.password === ""){

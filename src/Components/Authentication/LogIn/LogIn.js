@@ -25,8 +25,11 @@ const Login = () => {
             email: details.email,
             password: details.password
         }
+        let entries = (Object.values(details))
         setFormErrors(ValidateLogin(userLoginDetails))
-        if(formErrors.all === ""){
+        if(entries.every(entry=>{
+            return entry !== ""
+        })){
             axios.post(api, {userLoginDetails})
             .then(res=>{
                 console.log(res)
@@ -34,6 +37,16 @@ const Login = () => {
             })
             .catch(err=>console.log(err))
         }
+        // entries.forEach(entry=>{
+        //     if(entry !== ""){
+                // axios.post(api, {userLoginDetails})
+                // .then(res=>{
+                //     console.log(res)
+                //     console.log(userLoginDetails)
+                // })
+                // .catch(err=>console.log(err))
+        //     }
+        // })
     }
     return ( 
         <Card>
