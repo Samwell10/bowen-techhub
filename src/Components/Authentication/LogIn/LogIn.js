@@ -34,22 +34,6 @@ const Login = () => {
             })
             .catch(err=>console.log(err))
         }
-        // if(formErrors){
-        //     return;
-        // }
-        // else{
-        //     // const {usersData} = useFetch(api)
-        // }
-        // axios.post(api, {userLoginDetails})
-        // .then(res=>{
-        //     return res.json()
-        // })
-        // .then(data => {
-        //     console.log(data)
-        // })
-        // .catch(err=>{
-        //     setNetworkErr(err)
-        // })
     }
     return ( 
         <Card>
@@ -81,6 +65,7 @@ const Login = () => {
                         </label>
                         <input 
                         type="password" 
+                        autoComplete='on'
                         name="password" 
                         id="password"
                         className={formErrors.password ? styles.errorField : ""}

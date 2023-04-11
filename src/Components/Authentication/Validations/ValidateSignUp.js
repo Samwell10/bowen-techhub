@@ -4,9 +4,6 @@ const ValidateSignUp = (entry, /*data*/) => {
     if(entry.firstname === "" ||entry.lastname === "" ||entry.email === "" ||entry.password === "" ||entry.community === "" ||entry.community === null || entry.skills === []){
         errors.all = "Please fill all fields"
     }
-    else{
-        errors.all = ""
-    }
     if(entry.firstname===""){
         errors.firstname = "Please fill all fields"
     }
@@ -15,6 +12,9 @@ const ValidateSignUp = (entry, /*data*/) => {
     }
     if(entry.email===""){
         errors.email = ""
+    }
+    if(!regexEmail.test(entry.email)){
+        errors.email = "Enter a valid email"
     }
     if(entry.password===""){
         errors.password = "Please fill all fields"

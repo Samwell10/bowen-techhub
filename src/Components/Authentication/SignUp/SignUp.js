@@ -1,7 +1,6 @@
 import React, { useState } from "react";
 import RightBlock from "../RightBlock/RightBlock";
 import Card from "../Card/Card";
-import UseAxios from "../UseAxios/UseAxios";
 import axios from "axios";
 import styles from './SignUp.module.css'
 import SelectField from "./SelectField/SelectField";
@@ -11,7 +10,9 @@ import SkillsChoice from "./Choice/SkillsChoice/SkillsChoice";
 import ValidateSignUp from "../Validations/ValidateSignUp";
 const SignUp = () => {
     const api = "http://localhost:9000/posts"
-    const [formErrors, setFormErrors] = useState({})
+    const [formErrors, setFormErrors] = useState({
+        all: ""
+    })
     const [skills, setSkills] = useState([])
     const [community, setCommunity] = useState("")
     const [details, setDetails] = useState({
@@ -34,8 +35,8 @@ const SignUp = () => {
     const handleSkills = (entry) => {
         setSkills([...entry])
     }
-    const handleSubmit = (e) => {
-         e.preventDefault()
+    const handleSubmit = async (e) => {
+        e.preventDefault()
         const userSignUpDetails = {
             firstname: details.firstname,
             lastname: details.lastname,
@@ -45,13 +46,16 @@ const SignUp = () => {
             skills: skills
         }     
         setFormErrors(ValidateSignUp(userSignUpDetails))
-        if(formErrors.all === ""){
-            axios.post(api,{userSignUpDetails})
+        if(Object.values(details) !== "" && community !== "" && skills.length > 0){
+            await axios.post(api,{userSignUpDetails})
             .then(res=>{
                 console.log(res)
                 console.log(userSignUpDetails)
             })
             .catch(err=>console.log(err))
+        }
+        else{
+            return
         }
     }
     
@@ -88,7 +92,7 @@ const SignUp = () => {
                     <div className={styles.formElement}>
                         <label htmlFor="email">
                             Email
-                            {formErrors&& <small className={styles.error}>{formErrors.email === "" ? "": formErrors.email}</small>}
+                            {formErrors&& <small className={styles.mailError}>{formErrors.email === "" ? "": formErrors.email}</small>}
                         </label>
                         <input type="email"
                             name="email"
@@ -104,6 +108,7 @@ const SignUp = () => {
                         <input type="password"
                             name="password"
                             id="password"
+                            autoComplete="on"
                             className = {formErrors.password? styles.errorField : ''}
                             placeholder="Your Password"
                             value={details.password}
