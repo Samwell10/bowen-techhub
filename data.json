@@ -974,6 +974,28 @@
         ]
       },
       "id": 99
+    },
+    {
+      "userSignUpDetails": {
+        "firstname": "Etimbuk",
+        "lastname": "Udofia",
+        "email": "garrisardine@proton.com",
+        "password": "vwdhfkbwdnkbvwvnbwhbk ",
+        "community": "Frontend Community",
+        "skills": [
+          "HTML",
+          "CSS",
+          "JavaScript"
+        ]
+      },
+      "id": 100
+    },
+    {
+      "userLoginDetails": {
+        "email": "danieloonyeachonam2020@gmail.com",
+        "password": "ghoibshocabh"
+      },
+      "id": 101
     }
   ],
   "comments": [

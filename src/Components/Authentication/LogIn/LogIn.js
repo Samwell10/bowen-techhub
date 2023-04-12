@@ -19,7 +19,7 @@ const Login = () => {
             )
         })
     }
-    const handleSubmit = (e) => {
+    const handleSubmit = async (e) => {
         e.preventDefault();
         const userLoginDetails = {
             email: details.email,
@@ -30,7 +30,7 @@ const Login = () => {
         if(entries.every(entry=>{
             return entry !== ""
         })){
-            axios.post(api, {userLoginDetails})
+            await axios.post(api, {userLoginDetails})
             .then(res=>{
                 console.log(res)
                 console.log(userLoginDetails)
