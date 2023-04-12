@@ -36,7 +36,6 @@ const SignUp = () => {
         setSkills([...entry])
     }
     const handleSubmit = async (e) => {
-        e.preventDefault()
         const userSignUpDetails = {
             firstname: details.firstname,
             lastname: details.lastname,
@@ -57,14 +56,20 @@ const SignUp = () => {
             })
             .catch(err=>console.log(err))
         }
+        else{
+            e.preventDefault()
+        }
     }
     
     return ( 
         <Card>
             <div className={styles.leftBlock}>
                 <div className={styles.intro}>
-                    <h2 className={styles.h2}>Create an account</h2>
-                    <p className={styles.p}>You have an account already? <span><a className={styles.a} href="">Log In</a></span></p>
+                    <div className={styles.topBlock}>
+                        <h2 className={styles.h2}>Create an account</h2>
+                        <p className={styles.p}>You have an account already? <span><a className={styles.a} href="">Log In</a></span></p>
+                    </div>
+                    {formErrors && <small className={styles.error}>{formErrors.all}</small>}
                 </div>
                 <form className={styles.form} action="" onSubmit={handleSubmit}>
                     <div className={styles.formBlock}>
@@ -126,12 +131,11 @@ const SignUp = () => {
                         </div>
                     </div>
                     <div className={styles.choiceBlock}>
-                        {community && <CommunityChoice community = {community} setCommunity = {setCommunity}/>}
+                        {community !== "" && <CommunityChoice community = {community} setCommunity = {setCommunity}/>}
                         {skills && <SkillsChoice skills = {skills} setSkills = {setSkills} />}
                     </div>
                     <div className={styles.formActions}>
                         <button type="submit">Create Account</button>
-                        {formErrors && <small className={styles.error}>{formErrors.all}</small>}
                     </div>
                 </form>
             </div>

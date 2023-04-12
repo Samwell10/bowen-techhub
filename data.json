@@ -1011,6 +1011,43 @@
         ]
       },
       "id": 102
+    },
+    {
+      "userSignUpDetails": {
+        "firstname": "Daniel",
+        "lastname": "Onyeachonam",
+        "email": "danieloonyeachonam2020@gmail.com",
+        "password": "cjfgojnhgvbjknbuhbyu",
+        "community": "Frontend Community",
+        "skills": [
+          "React",
+          "HTML",
+          "Bootstrap"
+        ]
+      },
+      "id": 103
+    },
+    {
+      "userSignUpDetails": {
+        "firstname": "Daniel",
+        "lastname": "Onyeachonam",
+        "email": "danielonyeachonam2022@yahoo.com",
+        "password": "asdfghjkl",
+        "community": "Backend Community",
+        "skills": [
+          "Python",
+          "Node.js",
+          "Django"
+        ]
+      },
+      "id": 104
+    },
+    {
+      "userLoginDetails": {
+        "email": "danieloonyeachonam2020@gmail.com",
+        "password": "sdafghhkhjjko;"
+      },
+      "id": 105
     }
   ],
   "comments": [

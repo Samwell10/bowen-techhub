@@ -20,7 +20,6 @@ const Login = () => {
         })
     }
     const handleSubmit = async (e) => {
-        e.preventDefault();
         const userLoginDetails = {
             email: details.email,
             password: details.password
@@ -37,16 +36,9 @@ const Login = () => {
             })
             .catch(err=>console.log(err))
         }
-        // entries.forEach(entry=>{
-        //     if(entry !== ""){
-                // axios.post(api, {userLoginDetails})
-                // .then(res=>{
-                //     console.log(res)
-                //     console.log(userLoginDetails)
-                // })
-                // .catch(err=>console.log(err))
-        //     }
-        // })
+        else{
+            e.preventDefault()
+        }
     }
     return ( 
         <Card>
@@ -91,7 +83,6 @@ const Login = () => {
                         <button type='submit'>Continue</button>
                     </div>
                 </form>
-                {/* {networkErr&&<p className={styles.networkErr}>{networkErr}</p>} */}
             </div>
             <RightBlock/>
         </Card>

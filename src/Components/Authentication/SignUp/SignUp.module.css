@@ -21,6 +21,7 @@
     width: 90%;
     max-width: 600px;
     display: flex;
+    justify-content: space-between;
     flex-direction: column;
     gap: 1.2em;
 }
@@ -35,6 +36,7 @@
     flex-direction: column;
     align-items: flex-start;
     gap: 0.5em;
+    position: relative;
 }
 .formElement label{
     color: rgba(106, 106, 106, 1);
@@ -55,12 +57,21 @@
 .formElement input:focus, .formElement select:focus{
     outline: none;
 }
+.intro{
+    width: 90%;
+    max-width: 600px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
 .formActions{
     display: flex;
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
     max-width: 600px;
+    padding-bottom: 1em;
 }
 .formActions button{
     background: #F3785B;
