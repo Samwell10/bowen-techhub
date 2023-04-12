@@ -996,6 +996,21 @@
         "password": "ghoibshocabh"
       },
       "id": 101
+    },
+    {
+      "userSignUpDetails": {
+        "firstname": "Etimbuk",
+        "lastname": "Udofia",
+        "email": "danieloonyeachonam2020@gmail.com",
+        "password": "etimbuklovescowandchicken",
+        "community": "Frontend Community",
+        "skills": [
+          "HTML",
+          "CSS",
+          "JavaScript"
+        ]
+      },
+      "id": 102
     }
   ],
   "comments": [

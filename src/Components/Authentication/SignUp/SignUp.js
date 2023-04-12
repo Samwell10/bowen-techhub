@@ -122,12 +122,12 @@ const SignUp = () => {
                         </div>
                         <div className={styles.formElement}>
                             <label htmlFor="select">Select Skills</label>
-                            <SearchField onReceive={handleSkills} error={formErrors.skills}/>
+                            <SearchField skills={skills} setSkills={setSkills} onReceive={handleSkills} error={formErrors.skills}/>
                         </div>
                     </div>
                     <div className={styles.choiceBlock}>
                         {community && <CommunityChoice community = {community} setCommunity = {setCommunity}/>}
-                        {skills && <SkillsChoice skills = {skills} setSkills = {setSkills}/>}
+                        {skills && <SkillsChoice skills = {skills} setSkills = {setSkills} />}
                     </div>
                     <div className={styles.formActions}>
                         <button type="submit">Create Account</button>

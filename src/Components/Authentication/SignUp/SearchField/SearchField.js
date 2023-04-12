@@ -20,16 +20,15 @@ const SearchField = (props) => {
         'JavaScript',
         'JAVA'
     ]
-    const [skills, setSkills] = useState([])
-    const mySkills = new SkillsDictionary(skills)
+    const mySkills = new SkillsDictionary(props.skills)
     const [searchParameter, setSearchParameter] = useState("")
     const handleChange = (e) => {
         setSearchParameter(e.target.value)
     }
     
     const handleClick = (item) => {
-        setSkills(mySkills.add(item))
-        props.onReceive(skills)
+        props.setSkills(mySkills.add(item))
+        props.onReceive(props.skills)
         setSearchParameter("")
     }
     return ( 
