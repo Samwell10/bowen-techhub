@@ -89,8 +89,13 @@
     transition: all 0.5s ease-in-out;
     font-weight: 600;
 }
-.formActions button:hover{
-    opacity: 0.8;
+@media (hover: hover) {
+    .formActions button:hover {
+        opacity: 0.8;
+    }
+}
+.formActions button:focus{
+    outline: none;
 }
 .formElement input::placeholder{
     color:rgba(122, 122, 122, 1);
