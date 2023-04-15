@@ -35,6 +35,7 @@ ul{
     box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.2);
     color:rgba(122, 122, 122, 1);
     transition: all 0.7s ease-in-out;
+    z-index: 1;
 }
 .options li{
     font-size: 0.9rem;
@@ -47,4 +48,12 @@ ul{
 }
 .selectBtn.errorField{
     border-color: rgba(250, 10, 10, 0.945);
+}
+@media screen and (max-width:400px) {
+    .selectBtn{
+        width: 100%;
+    }
+    .options{
+        height:165px;
+    }
 }

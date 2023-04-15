@@ -117,3 +117,9 @@ label span{
     margin-top: 2em;
     position: absolute;
 }
+@media screen and (max-width: 600px) {
+    .form{
+        width: 100%;
+        max-width: 600px;
+    }
+}

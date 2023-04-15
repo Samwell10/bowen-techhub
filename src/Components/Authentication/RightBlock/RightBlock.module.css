@@ -31,3 +31,8 @@
 ul{
     list-style:none;
 }
+@media screen and (max-width:750px) {
+    .rightBlock{
+        display: none;
+    }
+}

@@ -120,3 +120,32 @@
 input.errorField{
     border-color: rgba(250, 10, 10, 0.945);
 }
+@media screen and (max-width: 750px) {
+    .form{
+        width: 100%;
+        max-width: 600px;
+        margin: auto;
+    }
+    .intro{
+        margin: auto;
+    }
+}
+@media screen and (max-width: 600px) {
+    .form{
+        width: 100%;
+        max-width: unset;
+    }
+    .intro{
+        margin: unset;
+    }
+}
+@media screen and (max-width: 400px) {
+    .formBlock{
+        grid-template-columns: unset;
+        gap: 1.2em;
+        width: 100%;
+    }
+    .formBlock .formElement input{
+        width: 100%;
+    }
+}
