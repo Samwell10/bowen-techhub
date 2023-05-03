@@ -1,0 +1,50 @@
+.aboutBlock{
+    width: 90%;
+    max-width: 1000px;
+    margin: auto;
+    margin-top: 12em;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+.left{
+    max-width: 400px;
+}
+.leftBlock{
+    display: flex;
+    
+    gap: 0.8em;
+}
+.leftBlock::before{
+    content: '';
+    width: 10px;
+    display: inline-flex;
+    margin-top: -0.8em ;
+    height: 100px;
+    background: linear-gradient(180deg, #5B56A6 0%, #AB247C 51.56%, #ED4174 81.25%, #F16A66 100%);
+    border-radius: 12px;
+}
+.rightBlock{
+    max-width: 350px;
+}
+.rightBlock img{
+    width: 100%;
+}
+.aboutDesc{
+    margin-top: 2em;
+    font-weight: 500;
+}
+@media screen and (max-width:700px) {
+ .aboutBlock{
+    margin-top: 10em;
+    flex-direction: column;
+    gap: 3rem;
+ }   
+ .left{
+    max-width: unset;
+ }
+ .aboutDesc{
+    font-size: 0.85rem;
+ }
+}
