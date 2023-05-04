@@ -1,5 +1,5 @@
 import styles from './AboutBlock.module.css'
-import logo from './largelogo.svg'
+import logo from '../../../images/Logos/largelogo.jpg'
 const AboutBlock = () => {
     return ( 
         <div className={styles.aboutBlock}>
