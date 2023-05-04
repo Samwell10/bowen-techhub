@@ -6,6 +6,10 @@
     width: 100%;
     position: relative;
 }
+.slider{
+    width: 100%;
+    position: relative;
+}
 .carouselControls{
     position: relative;
     width: 100%;
@@ -90,5 +94,16 @@
     .currentDesc{
         transition: all 0.5s ease ;
         opacity: 1;
+    }
+    .page{
+        font-size: 1rem;
+    }
+    .quote{
+        width: 40px;
+    }
+}
+@media screen and  (max-width:300px){
+    .page{
+        font-size: 0.875rem;
     }
 }

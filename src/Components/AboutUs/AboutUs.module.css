@@ -1,4 +1,5 @@
 .techAbout{
+    position: relative;
     width: 90%;
     max-width: 1000px;
     display: grid;
@@ -28,25 +29,5 @@
         gap:2rem;
         grid-template-columns: unset;
         margin-top: 25em;
-    }
-}
-@media screen and (max-width:600px) {
-    .techAbout{
-        margin-top: 30em;
-    }   
-}
-@media screen and (max-width:450px) {
-    .techAbout{
-        margin-top: 35em;
-    }
-}
-@media screen and (max-width:350px) {
-    .techAbout{
-        margin-top:40em ;
-    }
-}
-@media screen  and (max-width:300px){
-    .techAbout{
-        margin-top: 45em;
     }
 }
