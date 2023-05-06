@@ -1,0 +1,20 @@
+.coreValues{
+    width: 90%;
+    max-width: 900px;
+    margin: 8em auto;
+}
+.top{
+    display: flex;
+    gap: 0.8em;
+}
+.top::before{
+    content: '';
+    display: inline-flex;
+    width: 10px;
+    height: 100px;
+    background: linear-gradient(180deg, #5B56A6 0%, #AB247C 51.56%, #ED4174 81.25%, #F16A66 100%);
+    border-radius: 12px;
+}
+.missionDesc{
+    margin-top: 0.8em;
+}

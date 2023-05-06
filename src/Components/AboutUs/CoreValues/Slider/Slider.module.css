@@ -1,0 +1,109 @@
+.sliderContainer{
+    position: relative;
+    width: 100%;
+}
+.sliderTrack{
+    width: 100%;
+    position: relative;
+}
+.slider{
+    width: 100%;
+    position: relative;
+}
+.carouselControls{
+    position: relative;
+    width: 100%;
+    max-width: 700px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    margin: 5em auto 0 auto;
+}
+.desc{
+    cursor: pointer;
+    width: 100%;
+    font-weight: 600;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.desc:hover{
+    opacity: 0.7;
+}
+.desc::after{
+    content:'';
+    width: 40%;
+    opacity: 0;
+    height: 5px;
+    display: inline-flex;
+    margin: 0.3em auto ;
+    background: linear-gradient(-90deg, #5B56A6 0%, #AB247C 51.56%, #ED4174 81.25%, #F16A66 100%);
+    border-radius: 12px;
+}
+.desc.currentDesc::after{
+    opacity: 1;
+}
+.innerBlock{
+    width: 100%;
+    position: relative;
+    padding: 4em 2em;
+}
+.quote{
+    position: absolute;
+    width: 80px;
+    left: 5%;
+}
+.page{
+    width: 100%;
+    margin-top:2em;
+    text-align: center;
+    font-size: 1.3rem;
+    color: white;
+    position: absolute;
+    transform: translateX(-50%);
+    opacity: 0;
+    transition: all 0.5s ease;
+}
+.mission{
+    background: #9747FF;
+    box-shadow: 0px 0px 30px rgba(0, 0, 0, 0.2);
+    border-radius: 0.7rem;
+}
+.vision{
+    background: #F3785B;
+    box-shadow: 0px 0px 30px rgba(0, 0, 0, 0.2);
+    border-radius: 0.7rem;
+}
+.focus{
+    background: #5B56A6;
+    box-shadow: 0px 0px 30px rgba(0, 0, 0, 0.2);
+    border-radius: 0.7rem;
+}
+.currentPage{
+    width: 100%;
+    opacity: 1;
+    transform: translateX(0);
+}
+@media screen and (max-width:600px) {
+    .desc{
+        position: absolute;
+        opacity: 0;
+    }
+    .currentDesc{
+        transition: all 0.5s ease ;
+        opacity: 1;
+    }
+    .page{
+        font-size: 1rem;
+    }
+    .quote{
+        width: 40px;
+    }
+}
+@media screen and  (max-width:300px){
+    .page{
+        font-size: 0.875rem;
+    }
+}

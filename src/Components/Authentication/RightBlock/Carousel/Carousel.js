@@ -11,7 +11,7 @@ const Carousel = () => {
         setCurrentIndex(currentIndex === carouselLength -1 ? 0 : currentIndex + 1);
     }
     useEffect(()=>{
-         if(autoScroll){
+        if(autoScroll){
             slideInterval = setInterval(nextSlide,7000)
          }
         return ()=>{
