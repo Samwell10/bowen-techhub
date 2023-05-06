@@ -1,0 +1,129 @@
+.contact{
+    padding: 7.5rem 10.5rem 7rem 10.5rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.leave-message, .message-form{
+    width: 47%;
+}
+.leave-message-head{
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 2.25rem;
+    line-height: 44px;
+    color: #0A0101;
+}
+.leave-message-body{
+    margin-top: 30px;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 1.5rem;
+    line-height: 29px;
+    color: #000000;
+}
+.message-form{
+    background:url(../../images/background/Wave.png), #5B56A6;
+    border-radius: 30px;
+    padding: 3.5rem;
+}
+.message-form-head{
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 2rem;
+    line-height: 39px;
+    color: #FFFFFF;
+}
+.message-form-body{
+    margin-top: 12px;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 1.25rem;
+    color: #FFFFFF;
+}
+.contact-submit{
+    margin-top: 49px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.contact-submit button{
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 1.2rem;
+    padding: 0.825rem;
+    line-height: 29px;
+    color: #FFFFFF;
+    background: #F16A66;
+    border: 3px solid #EDEDED;
+    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.2);
+    border-radius: 15px;
+}
+@media (max-width: 1280px){
+    .contact{
+        padding: 7.5rem 5.5rem 7rem 5.5rem;
+    }
+}
+@media (max-width: 1100px){
+    .contact{
+        padding: 7.5rem 3.5rem 7rem 3.5rem;
+    }
+    .message-form{
+        padding: 2.5rem;
+    }
+}
+@media (max-width: 800px){
+    .contact{
+        padding: 4.5rem 1.375rem 4rem 1.375rem;
+        position: relative;
+        flex-direction: column-reverse;
+    }
+    .leave-message, .message-form{
+        width: 100%;
+    }
+    .message-form{
+        padding: 2rem;
+    }
+    .form-1{
+        margin-top: 8px;
+    }
+    .leave-message-head{
+        position: absolute;
+        top: 0;
+        font-family: 'Inter';
+        font-style: normal;
+        font-weight: 700;
+        font-size: 1.5rem;
+        line-height: 44px;
+        color: #0A0101;
+        text-align: center;
+    }
+    .leave-message-body{
+        margin-top: 20px;
+        font-weight: 500;
+        font-size: 0.875rem;
+        line-height: 17px;
+    }
+    .message-form-head{
+        font-size: 0.825rem;
+        line-height: 13px;
+    }
+    .message-form-body{
+        margin-top: 10px;
+        font-size:  0.6375rem;
+        line-height: 8px;
+    }
+    .contact-submit{
+        margin-top: 16px;
+    }
+    .contact-submit button{
+        font-size: 0.5rem;
+        padding: 0.525rem 4rem;
+    }
+}

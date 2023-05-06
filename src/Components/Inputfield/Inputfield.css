@@ -1,0 +1,38 @@
+.inputfield label{
+    padding-top: 24px;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 1.125rem;
+    line-height: 22px;
+    color: #FFFFFF;
+}
+.inputfield input, .inputfield textarea{
+    margin-top: 6px;
+    width: 100%;
+    height: 80px;
+    padding-left: 20px;
+    background: #FFFFFF;
+    border: none;
+    border-radius: 10px;
+}
+.textfield textarea{
+    height: 180px;
+}
+.form-1{
+    margin-top: 24px    ;
+}
+@media (max-width: 800px) {
+    .inputfield label{
+        font-size: 0.6rem;
+    }
+    .inputfield input, .inputfield textarea{
+        width: 100%;
+        height: 26px;
+        border-radius: 3.32929px;
+    }
+    .textfield textarea{
+        height: 61px;
+        
+    }
+}

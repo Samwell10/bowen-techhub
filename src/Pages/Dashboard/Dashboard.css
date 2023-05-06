@@ -1,0 +1,352 @@
+.dashboard{
+    
+}
+.dashboard-head{
+    padding: 5rem 9.5rem 10rem 9.5rem;
+    background-image: url(../../images/background/Wave.png), linear-gradient(131.27deg, #5B56A6 8.31%, #AB247C 48.73%, #ED4174 68.7%, #F16A66 83.77%, #DDDDDD 96.46%);
+    background-repeat: no-repeat;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.dashboard-header{
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 3.8rem;
+    line-height: 77px;
+    color: #FFFFFF;
+}
+.dashboard-header span{
+    color: #F3785B;
+}
+.dashboard-left, .dashboard-right{
+    width: 49%;
+}
+.dashboard-text{
+    margin-top: 24px;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 1.4rem;
+    line-height: 29px;
+    color: #FFFFFF;
+}
+.dashboard-button{
+    margin-top: 24px;
+    display: flex;
+    align-items: center;
+}
+.get-started{
+    margin-right: 16px;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 1.25rem;
+    line-height: 24px;
+    color: hsl(266, 100%, 64%);
+    padding: 0.725rem;
+    background: #FFFFFF;
+    border-radius: 15px;
+    border: none;
+}
+.learn-more{
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 1.25rem;
+    line-height: 24px;
+    color: white;
+    padding: 0.725rem;
+    background: #F16A66;
+    border-radius: 15px;
+    border: none; 
+}
+.dashboard-right-inner{
+    /* background-image: url(../../images/eclipse.png);
+    background-repeat: no-repeat;
+    background-size: 80%; */
+    background-position: center;
+    position: relative;
+    width: 100%;
+}
+.eclipse-image img{
+    width: 90%;
+    position: absolute;
+    left: 50%;
+    margin-left: -50px;
+    top: 50%;
+    margin-top: -50px;
+}
+.people-image img{
+    width: 100%;
+}
+.person-image{
+    position: absolute;
+    left: -40px;
+    bottom: -100px;
+}
+.person-image img{
+    width: 80%;
+}
+.what-we-do{
+    padding: 7.5rem 10.5rem 7rem 10.5rem;
+    background-color: #FFFFFF;
+}
+.what-we-do-inner{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.what-left, .what-right{
+    width: 50%;
+}
+.what-image{
+    width: 100%;
+    position: relative;
+}
+.what-image img{
+    width: 80%;
+}
+.eclipse-1,.eclipse-2{
+    position: absolute;
+}
+.eclipse-1{
+    top: 120px;
+    right: 40px;
+}
+.eclipse-2{
+    bottom: -50px;
+    left: 150px;
+}
+.what-header{
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 2.8rem;
+    line-height: 58px;
+    color: #AB247C;
+}
+.what-header span{
+    font-weight: 600;
+}
+.what-text{
+    margin-top: 24px;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 1.3rem;
+    line-height: 29px;
+    color: #343666;
+}
+.what-button{
+    margin-top: 24px;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 1.575rem;
+    line-height: 37px;
+    color: #FFFFFF;
+    padding: 0.9375rem;
+    background: #AB247C;
+    border: 5px solid #EDEDED;
+    box-shadow: 0px 0px 30.3333px rgba(0, 0, 0, 0.2);
+    border-radius: 22.75px;
+}
+.meet-executives{
+    margin-top: 178px;
+    text-align: center;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 2rem;
+    line-height: 39px;
+    color: #000000;
+}
+.dashboard-achievement{
+    padding: 7.5rem 10.5rem 7rem 10.5rem;
+}
+.achievement-head{
+    margin-top: 0px;
+}
+.achievement-container{
+    margin-top: 71px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.achievement{
+    background-color: #AB247C;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 600;
+    text-align: center;
+    color: #FFFFFF;
+    width: 322px;
+    height: 322px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.students{
+    background-color: #5B56A6;
+}
+.communities{
+    background-color: #F3785B;
+}
+.internship{
+    background-color: #ED4174;
+}
+.achievement svg{
+    font-size: 6rem;
+}
+.achievement-numbers{
+    font-size: 3.625rem;
+}
+.achievement-title{
+    font-size: 2.0625rem;
+    /* width: 146px; */
+}
+@media (max-width: 1280px){
+    .dashboard-head{
+        padding: 5rem 5.5rem 10rem 5.5rem;
+    }
+    .what-we-do{
+        padding: 7.5rem 6.5rem 7rem 6.5rem;
+    }
+    .dashboard-achievement{
+        padding: 7.5rem 6.5rem 7rem 6.5rem;
+    }
+    .achievement{
+        width: 300px;
+        height: 300px;
+    }
+    .achievement-numbers{
+        font-size: 3.525rem;
+    }
+    .achievement-title{
+        font-size: 2.0rem;
+        /* width: 146px; */
+    }
+}
+@media (max-width: 1100px){
+    .dashboard-head{
+        padding: 5rem 3.5rem 10rem 3.5rem;
+    }
+    .dashboard-header{
+        font-size: 2.7rem;
+    }
+    .dashboard-text{
+        font-size: 1.2rem;
+    }
+    .what-we-do{
+        padding: 7.5rem 4.5rem 7rem 4.5rem;
+    }
+    .what-image img{
+        width: 90%;
+    }
+    .what-text{
+        font-size: 1.1rem;
+    }
+    .dashboard-achievement{
+        padding: 7.5rem 4.5rem 7rem 4.5rem;
+    }
+    .achievement{
+        width: 260px;
+        height: 260px;
+    }
+    .achievement svg{
+        font-size: 5rem;
+    }
+    .achievement-numbers{
+        font-size: 3.025rem;
+    }
+    .achievement-title{
+        font-size: 1.6rem;
+        /* width: 146px; */
+    }
+}
+@media (max-width: 800px) {
+    .dashboard-head{
+        padding: 5rem 1.375rem 10rem 1.375rem;
+    }
+    .dashboard-left{
+        width: 100%;
+    }
+    .dashboard-right{
+        display: none;
+    }
+    .what-we-do-inner{
+        display: block;
+    }
+    .what-we-do{
+        padding: 5.5rem 1.375rem 2rem 1.375rem;
+    }
+    .what-left, .what-right{
+        width: 100%;
+    }
+    .what-image{
+        width: 100%;
+        position: relative;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    .what-image img{
+        width: 90%;
+    }
+    .eclipse-1 img, .eclipse-2 img{
+        width: 60px;
+    }
+    .eclipse-1{
+        top: 60px;
+        right: 0px;
+    }
+    .eclipse-2{
+        bottom: -30px;
+        left: 200px;
+    }
+    .what-header{
+        margin-top: 60px;
+        font-size: 1.5rem;
+        line-height: 29px;
+    }
+    .what-text{
+        font-weight: 400;
+        font-size: 0.875rem;
+        line-height: 29px;
+        color: #343666;
+    }
+    .what-button-outer{
+        display: flex;
+        justify-content: center;
+    }
+    .what-button{
+        font-size: 0.75rem;
+        padding: 0.7375rem 6rem;
+    }
+    .meet-executives{
+        margin-top: 60px;
+    }
+    .dashboard-achievement{
+        padding: 2.5rem 2rem 3rem 2rem;
+    }
+    .achievement{
+        width: 104px;
+        height: 104px;
+        border-radius: 3.53956px;
+    }
+    .achievement svg{
+        font-size: 1.5rem;
+    }
+    .achievement-numbers{
+        margin-top: 3px;
+        font-size: 0.4375rem;
+    }
+    .achievement-title{
+        margin-top: 3px;
+        font-size: 0.5rem;
+        /* width: 146px; */
+    }
+}

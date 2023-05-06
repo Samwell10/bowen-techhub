@@ -1,0 +1,28 @@
+.sponsor{
+    padding: 6.25rem 9.5rem 6.25rem 9.5rem;
+    background-color: #FAFAFA;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.sponsor-image img{
+    width: 80%;
+}
+@media (max-width: 1280px){
+    .sponsor{
+        padding: 6.25rem 5.5rem 6.25rem 5.5rem;
+    }
+}
+@media (max-width: 1100px){
+    .sponsor{
+        padding: 6.25rem 3.5rem 6.25rem 3.5rem;
+    }
+}
+@media (max-width: 800px){
+    .sponsor{
+        padding: 1.875rem 0rem 1.875rem 0rem;
+    }
+    .sponsor-image img{
+        width: 90%;
+    }
+}

@@ -1,0 +1,26 @@
+export const Navbardetails = [
+    {
+        title:"Home",
+        link:"/"
+    },
+    {
+        title:"About",
+        link:"/about"
+    },
+    {
+        title:"Events",
+        link:"/dialogue"
+    },
+    {
+        title:"Courses",
+        link:"/courses"
+    },
+    {
+        title:"Blog",
+        link:"/blog"
+    },
+    {
+        title:"Contact",
+        link:"/contact"
+    },
+]
