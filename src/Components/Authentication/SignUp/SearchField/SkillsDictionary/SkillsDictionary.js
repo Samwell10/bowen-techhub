@@ -1,21 +1,20 @@
 class SkillsDictionary{
     constructor(skillsArr){
-        this.skillsStore = skillsArr
-    }
-    has(value){
-        return this.skillsStore.includes(value, 0)
+        this.skillsStore = skillsArr;
     }
     add(value){
-        if(this.has(value)){
-            return;
+        for(var i = 0; i < this.skillsStore.length; i++){
+            if(this.skillsStore[i] === value){
+                return this.skillsStore;
+            }
         }
-        else{
-            this.skillsStore.push(value)
-        }
+        this.skillsStore.push(value);
         return this.skillsStore;
     }
     remove(value){
-        this.skillsStore.splice(this.skillsStore.indexOf(value), 1)
+        this.skillsStore = this.skillsStore.filter((skill)=>{
+            return skill !== value;
+        })
         return this.skillsStore;
     }
 }

@@ -21,6 +21,7 @@
     width: 90%;
     max-width: 600px;
     display: flex;
+    justify-content: space-between;
     flex-direction: column;
     gap: 1.2em;
 }
@@ -35,10 +36,16 @@
     flex-direction: column;
     align-items: flex-start;
     gap: 0.5em;
+    position: relative;
 }
 .formElement label{
     color: rgba(106, 106, 106, 1);
     font-weight: 600;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
 }
 .formElement input, .formElement select{
     width: 100%;
@@ -49,6 +56,22 @@
 }
 .formElement input:focus, .formElement select:focus{
     outline: none;
+}
+.intro{
+    width: 90%;
+    max-width: 600px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+.formActions{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 600px;
+    padding-bottom: 1em;
 }
 .formActions button{
     background: #F3785B;
@@ -79,4 +102,50 @@
     display: flex;
     flex-direction: column;
     align-items: flex-end;
+}
+.error, .mailError{
+    color: rgba(250, 10, 10, 0.945);
+    font-size: 1rem;
+    font-weight: 600;
+}
+.mailError{
+    font-size: 0.8rem;
+}
+.formElement label{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+input.errorField{
+    border-color: rgba(250, 10, 10, 0.945);
+}
+@media screen and (max-width: 750px) {
+    .form{
+        width: 100%;
+        max-width: 600px;
+        margin: auto;
+    }
+    .intro{
+        margin: auto;
+    }
+}
+@media screen and (max-width: 600px) {
+    .form{
+        width: 100%;
+        max-width: unset;
+    }
+    .intro{
+        margin: unset;
+    }
+}
+@media screen and (max-width: 400px) {
+    .formBlock{
+        grid-template-columns: unset;
+        gap: 1.2em;
+        width: 100%;
+    }
+    .formBlock .formElement input{
+        width: 100%;
+    }
 }

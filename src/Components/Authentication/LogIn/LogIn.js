@@ -3,16 +3,14 @@ import Card from '../Card/Card';
 import {useState} from 'react'
 import styles from './LogIn.module.css'
 import axios from 'axios';
-import useFetch from '../UseFetch/UseFetch';
+import ValidateLogin from '../Validations/ValidateLogin';
 const Login = () => {
-    const regexEmail = ""
     const [formErrors, setFormErrors] = useState({})
-    const [networkErr, setNetworkErr] = useState("")
     const [details, setUserDetails] = useState({
         email: "",
         password: ""
     })
-    const api = ""
+    const api = "http://localhost:9000/posts"
     const handleChange = (e) => {
         const {name, value} = e.target
         setUserDetails((prev)=>{
@@ -21,47 +19,26 @@ const Login = () => {
             )
         })
     }
-    const handleSubmit = (e) => {
-        e.preventDefault();
-        setFormErrors(validateLoginDetails(details))
-        if(formErrors){
-            return;
+    const handleSubmit = async (e) => {
+        const userLoginDetails = {
+            email: details.email,
+            password: details.password
+        }
+        let entries = (Object.values(details))
+        setFormErrors(ValidateLogin(userLoginDetails))
+        if(entries.every(entry=>{
+            return entry !== ""
+        })){
+            await axios.post(api, {userLoginDetails})
+            .then(res=>{
+                console.log(res)
+                console.log(userLoginDetails)
+            })
+            .catch(err=>console.log(err))
         }
         else{
-            // const {usersData} = useFetch(api)
+            e.preventDefault()
         }
-        // axios.post(api, {userLoginDetails})
-        // .then(res=>{
-        //     return res.json()
-        // })
-        // .then(data => {
-        //     console.log(data)
-        // })
-        // .catch(err=>{
-        //     setNetworkErr(err)
-        // })
-    }
-    const validateLoginDetails = (entry) => {
-        const errors = {};
-        if(entry.email === ""){
-            errors.email = "Email cannot be empty.";
-        }
-        if(entry.password === ""){
-            errors.password = "Password cannot be empty."
-        }
-        else if(!entry.email.includes('@')){
-            errors.email = "Email must contain @."
-        }
-        else if(!entry.email.match(regexEmail)){
-            errors.email = "Please enter a valid email."
-        }
-        if(entry.email){
-            errors.email = "This email is not linked to an account"
-        }
-        if(entry.password){
-            errors.password = "Incorrect Password"
-        }
-        return errors;
     }
     return ( 
         <Card>
@@ -74,12 +51,13 @@ const Login = () => {
                     <div className={styles.formElement}>
                         <label htmlFor="Email">
                             Email
-                            <span>{formErrors.email}</span>
+                            {formErrors&&<span>{formErrors.email}</span>}   
                         </label>
                         <input 
                         type="email" 
                         name="email" 
-                        id="" 
+                        id="email" 
+                        className={formErrors.email ? styles.errorField : ""}
                         placeholder='example@gmail.com' 
                         value={details.email}
                         onChange={handleChange}
@@ -88,12 +66,14 @@ const Login = () => {
                     <div className={styles.formElement}>
                         <label htmlFor="Password">
                             Password
-                            <span>{formErrors.password}</span>
+                            {formErrors&&<span>{formErrors.password}</span>}
                         </label>
                         <input 
                         type="password" 
+                        autoComplete='on'
                         name="password" 
-                        id=""
+                        id="password"
+                        className={formErrors.password ? styles.errorField : ""}
                         placeholder='Your password' 
                         value={details.password} 
                         onChange={handleChange}
@@ -103,7 +83,6 @@ const Login = () => {
                         <button type='submit'>Continue</button>
                     </div>
                 </form>
-                {networkErr&&<p className={styles.networkErr}>{networkErr}</p>}
             </div>
             <RightBlock/>
         </Card>

@@ -5,9 +5,9 @@
 .myChoice{
     background: rgba(91, 86, 166, 0.1);
     border-radius: 12px;
-    width: 100%;
+    width: 50%;
     max-width: 200px;
-    padding: 0.3em;
+    padding: 0.5em 0.3em;
     display: flex;
     flex-direction: row;
     justify-content: space-between;

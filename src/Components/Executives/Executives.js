@@ -15,6 +15,6 @@ export const Executives = [
     {
         name:"MOYOSOORE",
         image: uiuxpresident,
-        position:"UI/UX President"
+        position:"General Secretary"
     },
 ]

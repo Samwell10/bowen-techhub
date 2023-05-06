@@ -37,8 +37,8 @@ const Navbar = () => {
                         })}
                     </nav>
                     <div className="auth-button">
-                        <button className="login">Log in</button>
-                        <button className="signup-2">Sign up</button>
+                        <Link to="/login"><button className="login">Log in</button></Link>
+                        <Link to="/signup"><button className="signup-2">Sign up</button></Link>
                     </div>
                 </div>
                 <button className='nav-btn nav-close' onClick={showNavbar}>

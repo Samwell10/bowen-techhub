@@ -4,6 +4,7 @@ import styles from './CommunityChoice.module.css'
 const CommunityChoice = (props) => {
     const [isCommunitySelected, setIsCommunitySelected] = useState(true)
     const handleClick = () => {
+        props.setCommunity(null)
         setIsCommunitySelected(false)
     }
     return (

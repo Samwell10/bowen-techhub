@@ -10,14 +10,14 @@ const CarouselData = [
     {
         id: 1,
         image: img,
-        name: "Richard Abayomi",
-        role: "Web Developer",
+        name: "Joshua Opaleke",
+        role: "UI/UX Designer",
         desc: "Est vestibulum eget rhoncus auctor mauris parturient tristique ac nulla. Est arcu iaculis feugiat eu vitae tincidunt mauris feugiat.",
     },
     {
         id: 2,
         image: img,
-        name: "Richard Abayomi",
+        name: "Karin Amodu",
         role: "Web Developer",
         desc: "Est vestibulum eget rhoncus auctor mauris parturient tristique ac nulla. Est arcu iaculis feugiat eu vitae tincidunt mauris feugiat.",
     }
