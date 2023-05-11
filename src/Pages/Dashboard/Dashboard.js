@@ -10,6 +10,7 @@ import code from '../../images/code.png'
 import Sponsor from '../../Components/Sponsor/Sponsor'
 import ExecutivePreview from '../../Components/Executives/ExecutivePreview';
 import Contact from '../../Components/Contactus/contact';
+import Footer from '../../Components/Footer/Footer';
 const Dashboard = () => {
     return ( 
         <div className="dashboard">
@@ -87,6 +88,9 @@ const Dashboard = () => {
             </section>
             <section className="dashboard-contact">
                 <Contact/>
+            </section>
+            <section>
+                <Footer/>
             </section>
         </div>
     );
