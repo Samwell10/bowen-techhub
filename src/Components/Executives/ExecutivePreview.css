@@ -10,8 +10,10 @@
     justify-content: center;
 }
 .executive-image img{
-    max-width: 70%;
-    min-width: 70%;
+    max-width: 200px;
+    min-width: 300px;
+    border: 10px solid white;
+    border-radius: 30px;
 }
 .executive-name{
     margin-top: 12px;

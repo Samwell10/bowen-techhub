@@ -89,9 +89,9 @@ const Dashboard = () => {
             <section className="dashboard-contact">
                 <Contact/>
             </section>
-            <section>
+            {/* <section>
                 <Footer/>
-            </section>
+            </section> */}
         </div>
     );
 }

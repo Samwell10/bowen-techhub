@@ -28,6 +28,7 @@ const Navbar = () => {
                                 <li
                                     key={key}
                                     className="link-path"
+                                    onClick={showNavbar}
                                 >
                                     <Link to={val.link}>
                                         <div className="address-name">{val.title}</div>
@@ -36,10 +37,10 @@ const Navbar = () => {
                             )
                         })}
                     </nav>
-                    <div className="auth-button">
+                    {/* <div className="auth-button">
                         <Link to="/login"><button className="login">Log in</button></Link>
                         <Link to="/signup"><button className="signup-2">Sign up</button></Link>
-                    </div>
+                    </div> */}
                 </div>
                 <button className='nav-btn nav-close' onClick={showNavbar}>
                     <FaBars/>

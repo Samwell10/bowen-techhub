@@ -10,17 +10,5 @@ export const Navbardetails = [
     {
         title:"Events",
         link:"/dialogue"
-    },
-    {
-        title:"Courses",
-        link:"/courses"
-    },
-    {
-        title:"Blog",
-        link:"/blog"
-    },
-    {
-        title:"Contact",
-        link:"/contact"
-    },
+    }
 ]
